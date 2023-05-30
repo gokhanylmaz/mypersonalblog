@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/7103073f98.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard text-center m-10">
+        <h1 class="text-2xl">Gökhan Yılmaz Blog Dashboard</h1>
+        <a class="text-blue-500" href="/blog">Sayfayı gör -></a>
+        <div class="form">
+            <form action="gonderiolustur" method="POST">
+                <div class="img m-3">
+                    <input class="border p-3" type="url" name="image" placeholder="image link">
+                </div>
+                <div class="title m-3">
+                    <input class="border p-3" type="text" name="title" placeholder="title">
+                </div>
+                <div class="description m-3">
+                    <textarea class="border" name="description" cols="30" rows="10" placeholder="description"></textarea>
+                </div>
+                <button>yayınla</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
